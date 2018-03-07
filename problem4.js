@@ -13,39 +13,44 @@ function palindrome()
 // same as the sequence of [4 or 5] to [0]. We can verify this through a series of if-else
 // statements. 
 
+
 {
 
 for (var i = 100; i <= 999; i++)
-{
 
-for (var j = 100; j <= 999; j++)
+	{
 
-{
+		for (var j = 100; j <= 999; j++)
 
-var product = (i * j);
+			{
 
-var digit1 = (''+product)[0];
-var digit2 = (''+product)[1];
-var digit3 = (''+product)[2];
-var digit4 = (''+product)[3];
-var digit5 = (''+product)[4];
-var digit6 = (''+product)[5];
+			var product = (i * j);
+
+			var digit1 = (''+product)[0];
+			var digit2 = (''+product)[1];
+			var digit3 = (''+product)[2];
+			var digit4 = (''+product)[3];
+			var digit5 = (''+product)[4];
+			var digit6 = (''+product)[5];
 
 
-if(digit1 == digit6 && digit2 == digit5 && digit3 == digit4)
-{
-console.log(product);
+	if(digit1 == digit6 && digit2 == digit5 && digit3 == digit4)
+		
+		{
+
+			console.log(product);
+		}
+
+
+
+	}
+
+
 }
 
-
-
 }
-
-
-}
-
-
-}
-
 
 console.log(palindrome());
+
+// The palindromes should increase in size as we near the final output of the program. 
+// Therefore we observe that 906,609 is output and that this is the largest palindrome.
